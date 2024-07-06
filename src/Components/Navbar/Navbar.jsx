@@ -11,9 +11,9 @@ function Navbar() {
   const {getTotalCartItems} = useContext(ShopContext);
   return (
     <div className='navbar'>
-      <div className="nav-logo">
+      <div className="nav-logo" onClick={()=>navgate('/')}>
           <img src={logo} alt="" />
-          <p>SHOPPER</p>
+          <p>SHOPPING</p>
       </div>
       <ul className="nav-menu">
         <li onClick={()=>{setMenu("shop");navgate('/')}} >Shop {menu === 'shop'?<hr/>:null}</li>
